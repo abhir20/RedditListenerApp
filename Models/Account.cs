@@ -23,9 +23,9 @@ namespace RedditListenerApp.Models
 
         }
 
-        Reddit.Models.Account account = new Reddit.Models.Account(appId,appSecret,accessToken,restClient,deviceId,userAgent);
+        //Reddit.Models.Account account = new Reddit.Models.Account(appId,appSecret,accessToken,restClient,deviceId,userAgent);
 
-        account.Me();
+        //account.Me();
         public User Me()
         {
             return JsonConvert.DeserializeObject<User>(ExecuteRequest("api/v1/me.json"));
