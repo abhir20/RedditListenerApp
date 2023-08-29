@@ -5,9 +5,13 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedditListenerApp", "RedditListenerApp.csproj", "{E5F35477-A254-4BFB-ABBE-CC46B94D2BBB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedditModels", "RedditModels\RedditModels.csproj", "{4AD0915D-20D7-4B59-BCBA-C22B012AD617}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{FE4519C0-C850-4189-8617-09A0B9DB32B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationTokenRetriever", "AuthenticationTokenRetriever\AuthenticationTokenRetriever.csproj", "{D274486E-2027-4CEC-8D5D-72AA71A16777}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{FABD3406-890B-4993-BF1F-9172CB82EDFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditAPI", "RedditAPI\RedditAPI.csproj", "{58A84F7B-40CF-45E9-B8C3-8EFA23FB7221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditListenerAppTests", "..\RedditListenerAppTests\RedditListenerAppTests.csproj", "{388B82BC-0AD4-4554-8AC8-A63DC6025CEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +23,22 @@ Global
 		{E5F35477-A254-4BFB-ABBE-CC46B94D2BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5F35477-A254-4BFB-ABBE-CC46B94D2BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5F35477-A254-4BFB-ABBE-CC46B94D2BBB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4AD0915D-20D7-4B59-BCBA-C22B012AD617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AD0915D-20D7-4B59-BCBA-C22B012AD617}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AD0915D-20D7-4B59-BCBA-C22B012AD617}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4AD0915D-20D7-4B59-BCBA-C22B012AD617}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D274486E-2027-4CEC-8D5D-72AA71A16777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D274486E-2027-4CEC-8D5D-72AA71A16777}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D274486E-2027-4CEC-8D5D-72AA71A16777}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D274486E-2027-4CEC-8D5D-72AA71A16777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE4519C0-C850-4189-8617-09A0B9DB32B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4519C0-C850-4189-8617-09A0B9DB32B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE4519C0-C850-4189-8617-09A0B9DB32B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4519C0-C850-4189-8617-09A0B9DB32B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABD3406-890B-4993-BF1F-9172CB82EDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABD3406-890B-4993-BF1F-9172CB82EDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABD3406-890B-4993-BF1F-9172CB82EDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABD3406-890B-4993-BF1F-9172CB82EDFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A84F7B-40CF-45E9-B8C3-8EFA23FB7221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A84F7B-40CF-45E9-B8C3-8EFA23FB7221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A84F7B-40CF-45E9-B8C3-8EFA23FB7221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A84F7B-40CF-45E9-B8C3-8EFA23FB7221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388B82BC-0AD4-4554-8AC8-A63DC6025CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388B82BC-0AD4-4554-8AC8-A63DC6025CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388B82BC-0AD4-4554-8AC8-A63DC6025CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388B82BC-0AD4-4554-8AC8-A63DC6025CEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

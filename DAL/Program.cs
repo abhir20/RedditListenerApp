@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RedditModels
+namespace DAL
 {
     class Program
     {
