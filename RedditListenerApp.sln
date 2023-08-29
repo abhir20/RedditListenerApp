@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Busine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{FABD3406-890B-4993-BF1F-9172CB82EDFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditAPI", "RedditAPI\RedditAPI.csproj", "{58A84F7B-40CF-45E9-B8C3-8EFA23FB7221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditListenerAppTests", "..\RedditListenerAppTests\RedditListenerAppTests.csproj", "{388B82BC-0AD4-4554-8AC8-A63DC6025CEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{FABD3406-890B-4993-BF1F-9172CB82EDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FABD3406-890B-4993-BF1F-9172CB82EDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FABD3406-890B-4993-BF1F-9172CB82EDFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A84F7B-40CF-45E9-B8C3-8EFA23FB7221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A84F7B-40CF-45E9-B8C3-8EFA23FB7221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A84F7B-40CF-45E9-B8C3-8EFA23FB7221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A84F7B-40CF-45E9-B8C3-8EFA23FB7221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388B82BC-0AD4-4554-8AC8-A63DC6025CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388B82BC-0AD4-4554-8AC8-A63DC6025CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388B82BC-0AD4-4554-8AC8-A63DC6025CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388B82BC-0AD4-4554-8AC8-A63DC6025CEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

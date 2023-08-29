@@ -6,5 +6,6 @@ namespace Business.BusinessLogic
 {
     interface IPostRepository
     {
+
     }
 }
