@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AuthenticationTokenRetriever
+namespace Business
 {
     class Program
     {

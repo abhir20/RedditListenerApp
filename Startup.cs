@@ -2,10 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Business.BusinessLogic;
+using Business.BusinessLogic.Concrete;
+using DAL.DBContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,6 +30,10 @@ namespace RedditListenerApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddScoped<IPostRepository, PostsRepository>();
+
+            services.AddDbContextPool<CustomDbContext>(o => o.UseSqlServer("Specify the database connection string here..."));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +44,8 @@ namespace RedditListenerApp
                 app.UseDeveloperExceptionPage();
             }
 
+            
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
